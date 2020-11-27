@@ -6,13 +6,11 @@ import java.util.List;
 public class GpCalculator {
 
     public static void main(String[] args) {
-
-        GpCalculator gpCalculator = new GpCalculator();
-        gpCalculator.start();
-
+        //launches the application
+      GpCalculator.start();
     }
 
-    private void start(){
+    private static void start(){
         List<String> grades = DataManager.getGrades();
         List<Integer> units = DataManager.getCourseUnits();
         double totalGradePoints = Calculate.calculateGrades(grades, units);

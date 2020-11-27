@@ -23,6 +23,7 @@ class CalculateTest {
 
     @org.junit.jupiter.api.Test
     void calculateGp() {
+        assertEquals(4.29, Calculate.calculateGp(90,21));
     }
 
     @org.junit.jupiter.api.Test
